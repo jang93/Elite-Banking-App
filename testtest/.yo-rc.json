@@ -8,8 +8,8 @@
       "./home",
       "./authentication2",
       "./homeView",
-      "./aboutView",
-      "./logInPage"
+      "./logInPage",
+      "./aboutView"
     ]
   }
 }

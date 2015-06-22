@@ -45,34 +45,9 @@
       "type": "view",
       "components": [],
       "name": "homeView",
-      "title": "Homepage",
+      "title": "WELCOME HUANG_PF",
       "addToNavigation": true,
       "icon": "home"
-    },
-    {
-      "type": "view",
-      "components": [
-        {
-          "type": "about",
-          "name": "aboutViewModel",
-          "appName": "My App",
-          "appVersion": "Version 1",
-          "appDescription": "App description",
-          "contactButton": true,
-          "contactLabel": "Contact us",
-          "contactMail": "support@example.com",
-          "facebookButton": true,
-          "facebookLabel": "Like us on Facebook",
-          "facebookLink": "https://www.facebook.com/Telerik",
-          "twitterButton": true,
-          "twitterLabel": "Follow us on Twitter",
-          "twitterLink": "https://twitter.com/telerik"
-        }
-      ],
-      "name": "aboutView",
-      "title": "About",
-      "addToNavigation": true,
-      "icon": "info"
     },
     {
       "type": "view",
@@ -80,6 +55,31 @@
       "name": "logInPage",
       "title": "WELCOME TO UBS I-BANKING",
       "addToNavigation": false
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "about",
+          "name": "aboutViewModel",
+          "appName": "EB I-Banking App",
+          "appVersion": "Version 1.0",
+          "appDescription": "This app was made by group SMUTD using Telerik's App Builder.",
+          "contactButton": true,
+          "contactLabel": "Contact us",
+          "contactMail": "jang93@gmail.com",
+          "facebookButton": true,
+          "facebookLabel": "Like us on Facebook",
+          "facebookLink": "https://www.facebook.com/Hpengfei?fref=ts",
+          "twitterButton": true,
+          "twitterLabel": "Follow us on Instagram",
+          "twitterLink": "https://instagram.com/instahpuff"
+        }
+      ],
+      "name": "aboutView",
+      "title": "About",
+      "addToNavigation": true,
+      "icon": "info"
     }
   ],
   "dataProviders": [
