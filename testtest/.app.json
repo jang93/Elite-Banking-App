@@ -45,7 +45,7 @@
       "type": "view",
       "components": [],
       "name": "homeView",
-      "title": "WELCOME HUANG_PF",
+      "title": "Homepage",
       "addToNavigation": true,
       "icon": "home"
     },
@@ -76,7 +76,13 @@
     },
     {
       "type": "view",
-      "components": [],
+      "components": [
+        {
+          "type": "form",
+          "components": [],
+          "name": "acctSummaryModel"
+        }
+      ],
       "name": "acctSummary",
       "title": "Account Summary",
       "addToNavigation": true,
