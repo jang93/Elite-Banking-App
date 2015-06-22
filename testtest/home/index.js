@@ -6,7 +6,7 @@ app.home = kendo.observable({
 (function(parent) {
     var provider = app.data.testBackend,
 
-        signinRedirect = 'authenticationView2',
+        signinRedirect = 'homeView',
         init = function() {
             var activeView = '.signin-view';
 

@@ -13,7 +13,7 @@
           "passwordLabel": "Password",
           "passwordPlaceholder": "Insert Password",
           "signinLabel": "Sign In",
-          "signinRedirect": "authenticationView2",
+          "signinRedirect": "homeView",
           "enableRegistration": false
         }
       ],
@@ -73,6 +73,13 @@
       "title": "About",
       "addToNavigation": true,
       "icon": "info"
+    },
+    {
+      "type": "view",
+      "components": [],
+      "name": "logInPage",
+      "title": "WELCOME TO UBS I-BANKING",
+      "addToNavigation": false
     }
   ],
   "dataProviders": [
