@@ -1,5 +1,5 @@
 'use strict';
 
-app.logInPage = kendo.observable({
+app.acctSummary = kendo.observable({
     onShow: function() {}
 });

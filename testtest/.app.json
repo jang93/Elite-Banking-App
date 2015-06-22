@@ -51,13 +51,6 @@
     },
     {
       "type": "view",
-      "components": [],
-      "name": "logInPage",
-      "title": "WELCOME TO UBS I-BANKING",
-      "addToNavigation": false
-    },
-    {
-      "type": "view",
       "components": [
         {
           "type": "about",
@@ -80,6 +73,14 @@
       "title": "About",
       "addToNavigation": true,
       "icon": "info"
+    },
+    {
+      "type": "view",
+      "components": [],
+      "name": "acctSummary",
+      "title": "Account Summary",
+      "addToNavigation": true,
+      "icon": "home"
     }
   ],
   "dataProviders": [
