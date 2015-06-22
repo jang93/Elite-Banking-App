@@ -5,11 +5,10 @@ app.home = kendo.observable({
 });
 (function(parent) {
     var provider = app.data.testBackend,
-        mode = 'signin',
-        registerRedirect = 'home',
+
         signinRedirect = 'authenticationView2',
         init = function() {
-            var activeView = mode === 'signin' ? '.signin-view' : '.signup-view';
+            var activeView = '.signin-view';
 
             if (provider.setup && provider.setup.offlineStorage && !app.isOnline()) {
                 $('.offline').show().siblings().hide();
@@ -18,7 +17,7 @@ app.home = kendo.observable({
             }
         },
         successHandler = function(data) {
-            var redirect = mode === 'signin' ? signinRedirect : registerRedirect;
+            var redirect = signinRedirect;
 
             if (data && data.result) {
                 app.user = data.result;
@@ -36,21 +35,6 @@ app.home = kendo.observable({
                     password = homeModel.password;
 
                 provider.Users.login(email, password, successHandler, init);
-            },
-            register: function() {
-                var email = homeModel.email.toLowerCase(),
-                    password = homeModel.password,
-                    displayName = homeModel.displayName,
-                    attrs = {
-                        Email: email,
-                        DisplayName: displayName
-                    };
-
-                provider.Users.register(email, password, attrs, successHandler, init);
-            },
-            toggleView: function() {
-                mode = mode === 'signin' ? 'register' : 'signin';
-                init();
             }
         });
 

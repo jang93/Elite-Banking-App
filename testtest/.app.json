@@ -14,13 +14,7 @@
           "passwordPlaceholder": "Insert Password",
           "signinLabel": "Sign In",
           "signinRedirect": "authenticationView2",
-          "enableRegistration": true,
-          "gotoRegisterLabel": "Register",
-          "registerEmailLabel": "Email",
-          "registerPasswordLabel": "Password",
-          "registerLabel": "Register",
-          "registerRedirect": "home",
-          "gotoSigninLabel": "Sign In"
+          "enableRegistration": false
         }
       ],
       "name": "home",
@@ -40,13 +34,7 @@
           "passwordPlaceholder": "**********",
           "signinLabel": "Authenticate",
           "signinRedirect": "homeView",
-          "enableRegistration": true,
-          "gotoRegisterLabel": "Register",
-          "registerEmailLabel": "Email",
-          "registerPasswordLabel": "Password",
-          "registerLabel": "Register",
-          "registerRedirect": "home",
-          "gotoSigninLabel": "Sign In"
+          "enableRegistration": false
         }
       ],
       "name": "authenticationView2",
