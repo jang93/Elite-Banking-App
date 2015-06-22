@@ -6,7 +6,7 @@
     "cleanup": [
       "./data/testBackend.js",
       "./home",
-      "./authenticationView2",
+      "./authentication2",
       "./homeView",
       "./aboutView",
       "./logInPage"

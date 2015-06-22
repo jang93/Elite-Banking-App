@@ -18,7 +18,7 @@
         }
       ],
       "name": "home",
-      "title": "WELCOME TO UBS I-BANKING",
+      "title": "WELCOME TO EB I-BANKING",
       "addToNavigation": false
     },
     {
@@ -26,9 +26,9 @@
       "components": [
         {
           "type": "authentication",
-          "name": "authenticationView2Model",
+          "name": "authentication2Model",
           "dataProvider": "testBackend",
-          "emailLabel": "Generated Code",
+          "emailLabel": "One-Time Code",
           "emailPlaceholder": "**********",
           "passwordLabel": "Authentication Code",
           "passwordPlaceholder": "**********",
@@ -37,8 +37,8 @@
           "enableRegistration": false
         }
       ],
-      "name": "authenticationView2",
-      "title": "Automatic Phone Authentication",
+      "name": "authentication2",
+      "title": "Automated Authentication",
       "addToNavigation": false
     },
     {

@@ -1,6 +1,6 @@
 'use strict';
 
-app.authenticationView2 = kendo.observable({
+app.authentication2 = kendo.observable({
     onShow: function() {}
 });
 (function(parent) {
@@ -26,20 +26,20 @@ app.authenticationView2 = kendo.observable({
                 init();
             }
         },
-        authenticationView2Model = kendo.observable({
+        authentication2Model = kendo.observable({
             displayName: '',
             email: '',
             password: '',
             signin: function() {
-                var email = authenticationView2Model.email.toLowerCase(),
-                    password = authenticationView2Model.password;
+                var email = authentication2Model.email.toLowerCase(),
+                    password = authentication2Model.password;
 
                 provider.Users.login(email, password, successHandler, init);
             }
         });
 
-    parent.set('authenticationView2Model', authenticationView2Model);
+    parent.set('authentication2Model', authentication2Model);
     parent.set('onShow', function() {
         provider.Users.currentUser().then(successHandler, init);
     });
-})(app.authenticationView2);
+})(app.authentication2);
