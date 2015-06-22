@@ -13,7 +13,7 @@
           "passwordLabel": "Password",
           "passwordPlaceholder": "Insert Password",
           "signinLabel": "Sign In",
-          "signinRedirect": "homeView",
+          "signinRedirect": "authenticationView2",
           "enableRegistration": false
         }
       ],
