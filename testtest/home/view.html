@@ -1,0 +1,26 @@
+<div data-role="view" data-title="WELCOME TO UBS I-BANKING" data-layout="main-nonav" data-model="app.home" data-show="app.home.onShow">
+    <div class="signin-view">
+        <form>
+            <ul data-role="listview" data-style="inset">
+                <li>
+                    <label>Username
+                        <input type="email" placeholder="Insert Username" data-bind="value: homeModel.email" required autofocus>
+                    </label>
+                </li>
+                <li>
+                    <label>Password
+                        <input type="password" placeholder="Insert Password" data-bind="value: homeModel.password" required>
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group button-group-vertical">
+                <a data-role="button" class="km-state-active" data-bind="events: { click: homeModel.signin }">Sign In</a>
+
+            </div>
+        </form>
+    </div>
+    <div class="offline" align="center" style="display:none;">
+        You are currently offline. Before using this app in offline mode you must initialize it while you are online
+    </div>
+</div>

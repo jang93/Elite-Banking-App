@@ -1,4 +1,93 @@
 {
   "type": "kendo-ui-mobile",
-  "isNew": true
+  "views": [
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "authentication",
+          "name": "homeModel",
+          "dataProvider": "testBackend",
+          "emailLabel": "Username",
+          "emailPlaceholder": "Insert Username",
+          "passwordLabel": "Password",
+          "passwordPlaceholder": "Insert Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "homeView",
+          "enableRegistration": false
+        }
+      ],
+      "name": "home",
+      "title": "WELCOME TO UBS I-BANKING",
+      "addToNavigation": false
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "authentication",
+          "name": "authenticationView2Model",
+          "dataProvider": "testBackend",
+          "emailLabel": "Generated Code",
+          "emailPlaceholder": "**********",
+          "passwordLabel": "Authentication Code",
+          "passwordPlaceholder": "**********",
+          "signinLabel": "Authenticate",
+          "signinRedirect": "homeView",
+          "enableRegistration": false
+        }
+      ],
+      "name": "authenticationView2",
+      "title": "Automatic Phone Authentication",
+      "addToNavigation": false
+    },
+    {
+      "type": "view",
+      "components": [],
+      "name": "homeView",
+      "title": "Homepage",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "about",
+          "name": "aboutViewModel",
+          "appName": "My App",
+          "appVersion": "Version 1",
+          "appDescription": "App description",
+          "contactButton": true,
+          "contactLabel": "Contact us",
+          "contactMail": "support@example.com",
+          "facebookButton": true,
+          "facebookLabel": "Like us on Facebook",
+          "facebookLink": "https://www.facebook.com/Telerik",
+          "twitterButton": true,
+          "twitterLabel": "Follow us on Twitter",
+          "twitterLink": "https://twitter.com/telerik"
+        }
+      ],
+      "name": "aboutView",
+      "title": "About",
+      "addToNavigation": true,
+      "icon": "info"
+    }
+  ],
+  "dataProviders": [
+    {
+      "type": "dataProvider",
+      "name": "testBackend",
+      "title": "Test / Test Backend",
+      "source": "everlive",
+      "everliveKey": "Vd4xCWKnwmfgFnWf",
+      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
+      "offlineStorage": true
+    }
+  ],
+  "name": "kendoUiMobileApp",
+  "navigation": "drawer",
+  "view": "home",
+  "skin": "native"
 }
