@@ -8,8 +8,9 @@
       "./home",
       "./authentication2",
       "./homeView",
+      "./dataListView",
       "./aboutView",
-      "./acctSummary"
+      "./acctsumm"
     ]
   }
 }

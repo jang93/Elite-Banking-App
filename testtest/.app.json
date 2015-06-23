@@ -53,6 +53,31 @@
       "type": "view",
       "components": [
         {
+          "type": "list",
+          "name": "dataListViewModel",
+          "dataProvider": "testBackend",
+          "collection": "Portfolio",
+          "iconField": false,
+          "headerField": "Stock_Name",
+          "subHeaderField": "Qty",
+          "filterField": "Stock_Name",
+          "masterDetails": true,
+          "detailHeaderField": "Stock_Name",
+          "detailSubHeaderField": "Market_Price",
+          "detailDescriptionField": "Market_Value",
+          "pullToRefresh": true,
+          "endlessScroll": false
+        }
+      ],
+      "name": "dataListView",
+      "title": "Portfolio Summary",
+      "addToNavigation": true,
+      "icon": "organize"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
           "type": "about",
           "name": "aboutViewModel",
           "appName": "EB I-Banking App",
@@ -78,15 +103,26 @@
       "type": "view",
       "components": [
         {
-          "type": "form",
-          "components": [],
-          "name": "acctSummaryModel"
+          "type": "list",
+          "name": "acctsummModel",
+          "dataProvider": "testBackend",
+          "collection": "Account_Summary",
+          "iconField": false,
+          "headerField": "Amount",
+          "subHeaderField": "Description",
+          "filterField": "Description",
+          "masterDetails": true,
+          "detailHeaderField": "Amount",
+          "detailSubHeaderField": "Description",
+          "detailDescriptionField": "Date",
+          "pullToRefresh": false,
+          "endlessScroll": false
         }
       ],
-      "name": "acctSummary",
+      "name": "acctsumm",
       "title": "Account Summary",
       "addToNavigation": true,
-      "icon": "home"
+      "icon": "organize"
     }
   ],
   "dataProviders": [
