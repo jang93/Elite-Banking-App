@@ -8,9 +8,10 @@
       "./home",
       "./authentication2",
       "./homeView",
-      "./dataListView",
+      "./acctsumm",
       "./aboutView",
-      "./acctsumm"
+      "./dataListView",
+      "./crossplatform"
     ]
   }
 }

@@ -54,23 +54,23 @@
       "components": [
         {
           "type": "list",
-          "name": "dataListViewModel",
+          "name": "acctsummModel",
           "dataProvider": "testBackend",
-          "collection": "Portfolio",
+          "collection": "Account_Summary",
           "iconField": false,
-          "headerField": "Stock_Name",
-          "subHeaderField": "Qty",
-          "filterField": "Stock_Name",
+          "headerField": "Amount",
+          "subHeaderField": "Description",
+          "filterField": "Description",
           "masterDetails": true,
-          "detailHeaderField": "Stock_Name",
-          "detailSubHeaderField": "Market_Price",
-          "detailDescriptionField": "Market_Value",
-          "pullToRefresh": true,
+          "detailHeaderField": "Amount",
+          "detailSubHeaderField": "Description",
+          "detailDescriptionField": "Date",
+          "pullToRefresh": false,
           "endlessScroll": false
         }
       ],
-      "name": "dataListView",
-      "title": "Portfolio Summary",
+      "name": "acctsumm",
+      "title": "Account Summary",
       "addToNavigation": true,
       "icon": "organize"
     },
@@ -104,25 +104,34 @@
       "components": [
         {
           "type": "list",
-          "name": "acctsummModel",
+          "name": "dataListViewModel",
           "dataProvider": "testBackend",
-          "collection": "Account_Summary",
+          "collection": "Portfolio",
           "iconField": false,
-          "headerField": "Amount",
-          "subHeaderField": "Description",
-          "filterField": "Description",
+          "headerField": "Stock_Name",
+          "subHeaderField": "Qty",
+          "filterField": "Stock_Name",
           "masterDetails": true,
-          "detailHeaderField": "Amount",
-          "detailSubHeaderField": "Description",
-          "detailDescriptionField": "Date",
-          "pullToRefresh": false,
+          "detailHeaderField": "Stock_Name",
+          "detailSubHeaderField": "Market_Price",
+          "detailDescriptionField": "Market_Value",
+          "detailImageField": "image",
+          "pullToRefresh": true,
           "endlessScroll": false
         }
       ],
-      "name": "acctsumm",
-      "title": "Account Summary",
+      "name": "dataListView",
+      "title": "Portfolio Summary",
       "addToNavigation": true,
       "icon": "organize"
+    },
+    {
+      "type": "view",
+      "components": [],
+      "name": "crossplatform",
+      "title": "Platform-Switch",
+      "addToNavigation": true,
+      "icon": "home"
     }
   ],
   "dataProviders": [
