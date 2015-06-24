@@ -123,7 +123,7 @@
       "name": "acctsumm",
       "title": "Account Summary",
       "addToNavigation": true,
-      "icon": "organize"
+      "icon": "bookmarks"
     },
     {
       "type": "view",
@@ -152,7 +152,7 @@
       "name": "fundxfer",
       "title": "Funds Transfer",
       "addToNavigation": true,
-      "icon": "contacts"
+      "icon": "action"
     },
     {
       "type": "view",
@@ -178,7 +178,7 @@
       "name": "dataListView",
       "title": "Portfolio Summary",
       "addToNavigation": true,
-      "icon": "organize"
+      "icon": "mostviewed"
     },
     {
       "type": "view",
@@ -186,7 +186,7 @@
       "name": "crossplatform",
       "title": "Platform-Switch",
       "addToNavigation": true,
-      "icon": "home"
+      "icon": "globe"
     },
     {
       "type": "view",
@@ -210,8 +210,7 @@
       ],
       "name": "aboutView",
       "title": "About",
-      "addToNavigation": true,
-      "icon": "info"
+      "addToNavigation": false
     },
     {
       "type": "view",
@@ -219,7 +218,104 @@
       "name": "settings",
       "title": "Settings",
       "addToNavigation": true,
-      "icon": "home"
+      "icon": "settings"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "form",
+          "components": [
+            {
+              "type": "field",
+              "name": "checkbox",
+              "title": "Account Summary",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "field",
+              "name": "checkbox1",
+              "title": "Funds Transfer Option",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "field",
+              "name": "checkbox2",
+              "title": "Most Recent Activities",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "field",
+              "name": "checkbox3",
+              "title": "Portfolio Summary",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "field",
+              "name": "checkbox4",
+              "title": "Recommended Financial News",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "field",
+              "name": "switch",
+              "title": "All News",
+              "inputType": "switch"
+            },
+            {
+              "type": "field",
+              "name": "switch1",
+              "title": "America News",
+              "inputType": "switch"
+            },
+            {
+              "type": "field",
+              "name": "switch2",
+              "title": "Asia News",
+              "inputType": "switch"
+            },
+            {
+              "type": "field",
+              "name": "switch3",
+              "title": "China News",
+              "inputType": "switch"
+            },
+            {
+              "type": "field",
+              "name": "switch4",
+              "title": "Europe News",
+              "inputType": "switch"
+            }
+          ],
+          "name": "preferredviewModel",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "name": "preferredview",
+      "title": "Select what you want to see in your Homepage",
+      "addToNavigation": false
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "form",
+          "components": [
+            {
+              "type": "field",
+              "name": "group",
+              "title": "You have been logged out succesfully!",
+              "inputType": "group-separator"
+            }
+          ],
+          "name": "formViewModel",
+          "submitButton": "Exit Application"
+        }
+      ],
+      "name": "formView",
+      "title": "Log-out",
+      "addToNavigation": false
     }
   ],
   "dataProviders": [

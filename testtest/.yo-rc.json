@@ -1,1 +1,1 @@
-{"dependsOn":["generator-kendo-ui-mobile@0.0.7"],"generator-kendo-ui-mobile":{"cleanup":["./data/testBackend.js","./layoutcustomizer","./home","./authentication2","./homeView","./acctsumm","./fundxfer","./dataListView","./crossplatform","./aboutView","./settings"]}}
+{"dependsOn":["generator-kendo-ui-mobile@0.0.7"],"generator-kendo-ui-mobile":{"cleanup":["./data/testBackend.js","./layoutcustomizer","./home","./authentication2","./homeView","./acctsumm","./fundxfer","./dataListView","./crossplatform","./aboutView","./settings","./preferredview","./formView"]}}

@@ -1,0 +1,63 @@
+<div data-role="view" data-title="Select what you want to see in your Homepage" data-layout="main-nonav" data-model="app.preferredview" data-show="app.preferredview.onShow">
+    <div id="preferredviewModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+                    <label>Account Summary
+                        <input data-bind="value: preferredviewModel.fields.checkbox" type="checkbox">
+                    </label>
+                </li>
+                <li>
+                    <label>Funds Transfer Option
+                        <input data-bind="value: preferredviewModel.fields.checkbox1" type="checkbox">
+                    </label>
+                </li>
+                <li>
+                    <label>Most Recent Activities
+                        <input data-bind="value: preferredviewModel.fields.checkbox2" type="checkbox">
+                    </label>
+                </li>
+                <li>
+                    <label>Portfolio Summary
+                        <input data-bind="value: preferredviewModel.fields.checkbox3" type="checkbox">
+                    </label>
+                </li>
+                <li>
+                    <label>Recommended Financial News
+                        <input data-bind="value: preferredviewModel.fields.checkbox4" type="checkbox">
+                    </label>
+                </li>
+                <li>
+                    <label>All News
+                        <input data-bind="value: preferredviewModel.fields.switch" data-role="switch">
+                    </label>
+                </li>
+                <li>
+                    <label>America News
+                        <input data-bind="value: preferredviewModel.fields.switch1" data-role="switch">
+                    </label>
+                </li>
+                <li>
+                    <label>Asia News
+                        <input data-bind="value: preferredviewModel.fields.switch2" data-role="switch">
+                    </label>
+                </li>
+                <li>
+                    <label>China News
+                        <input data-bind="value: preferredviewModel.fields.switch3" data-role="switch">
+                    </label>
+                </li>
+                <li>
+                    <label>Europe News
+                        <input data-bind="value: preferredviewModel.fields.switch4" data-role="switch">
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: preferredviewModel.cancel }">Cancel</a>
+                <a class="km-state-active" data-role="button" data-bind="events: { click: preferredviewModel.submit }">Confirm</a>
+            </div>
+        </form>
+    </div>
+</div>
