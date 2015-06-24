@@ -27,8 +27,7 @@
             }
           ],
           "name": "layoutcustomizerModel",
-          "submitButton": "Confirm",
-          "cancelButton": "Cancel"
+          "submitButton": "Confirm"
         }
       ],
       "name": "layoutcustomizer",

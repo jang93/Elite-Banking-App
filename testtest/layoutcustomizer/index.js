@@ -10,8 +10,7 @@ app.layoutcustomizer = kendo.observable({
             custom: '',
             default: '',
         },
-        submit: function() {},
-        cancel: function() {}
+        submit: function() {}
     });
 
     parent.set('layoutcustomizerModel', layoutcustomizerModel);
