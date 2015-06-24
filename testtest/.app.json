@@ -328,6 +328,53 @@
       "name": "formView",
       "title": "Log-out",
       "addToNavigation": false
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "form",
+          "components": [
+            {
+              "type": "field",
+              "name": "select",
+              "title": "Select Month",
+              "inputType": "dropdownlist"
+            }
+          ],
+          "name": "formView1Model",
+          "submitButton": "Download",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "name": "formView1",
+      "title": "E-Statement Download",
+      "addToNavigation": false
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "about",
+          "name": "aboutView1Model",
+          "appName": "Facing a problem? Need Advice?",
+          "appVersion": "Contact us through one of these methods.",
+          "appDescription": "Our customer service is available 24/7 and we are always ready to help! Upload photos of any documents that can help us help you better!",
+          "contactButton": true,
+          "contactLabel": "Call Customer Service",
+          "contactMail": "support@example.com",
+          "facebookButton": true,
+          "facebookLabel": "Contact your Relationship Manager",
+          "facebookLink": "https://www.facebook.com/Telerik",
+          "twitterButton": true,
+          "twitterLabel": "Photo Upload",
+          "twitterLink": "https://twitter.com/telerik"
+        }
+      ],
+      "name": "aboutView1",
+      "title": "Contact Us",
+      "addToNavigation": true,
+      "icon": "contacts"
     }
   ],
   "dataProviders": [
