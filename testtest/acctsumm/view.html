@@ -1,6 +1,6 @@
 <div data-role="view" data-title="Account Summary" data-layout="main" data-model="app.acctsumm" data-show="app.acctsumm.onShow">
 
-    <ul data-role="listview" data-style="inset" data-template="acctsummModelTemplate" data-bind="{ source: acctsummModel.dataSource, events: {click: acctsummModel.itemClick}}" data-pull-to-refresh="false" data-endless-scroll="false" data-filterable="{field: 'Description', operator: 'contains'}">
+    <ul data-role="listview" data-style="inset" data-template="acctsummModelTemplate" data-bind="{ source: acctsummModel.dataSource, events: {click: acctsummModel.itemClick}}" data-pull-to-refresh="true" data-endless-scroll="false">
     </ul>
     <script type="text/x-kendo-template" id="acctsummModelTemplate">
         <div class="image-with-text">

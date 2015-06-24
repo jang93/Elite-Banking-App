@@ -111,12 +111,12 @@
           "iconField": false,
           "headerField": "Amount",
           "subHeaderField": "Description",
-          "filterField": "Description",
+          "group": "Group",
           "masterDetails": true,
           "detailHeaderField": "Amount",
           "detailSubHeaderField": "Description",
           "detailDescriptionField": "Date",
-          "pullToRefresh": false,
+          "pullToRefresh": true,
           "endlessScroll": false
         }
       ],
@@ -182,7 +182,20 @@
     },
     {
       "type": "view",
-      "components": [],
+      "components": [
+        {
+          "type": "form",
+          "components": [
+            {
+              "type": "field",
+              "name": "group1",
+              "title": "Your session has been saved successfully! You may now proceed to Log-out and switch to your other mobile/desktop device.",
+              "inputType": "group-separator"
+            }
+          ],
+          "name": "crossplatformModel"
+        }
+      ],
       "name": "crossplatform",
       "title": "Platform-Switch",
       "addToNavigation": true,

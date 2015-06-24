@@ -11,6 +11,9 @@ app.acctsumm = kendo.observable({
                 typeName: 'Account_Summary',
                 dataProvider: dataProvider
             },
+            group: {
+                field: 'Group'
+            },
             schema: {
                 model: {
                     fields: {
