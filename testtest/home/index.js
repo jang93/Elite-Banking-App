@@ -7,7 +7,15 @@ app.home = kendo.observable({
     var provider = app.data.testBackend,
 
         signinRedirect = 'homeView',
-        init = function() {
+        init = function(error) {
+            if (error) {
+                if (error.message) {
+                    alert(error.message);
+                }
+
+                return false;
+            }
+
             var activeView = '.signin-view';
 
             if (provider.setup && provider.setup.offlineStorage && !app.isOnline()) {
@@ -30,9 +38,27 @@ app.home = kendo.observable({
             displayName: '',
             email: '',
             password: '',
+            validateData: function(data) {
+                if (!data.email) {
+                    alert('Missing email');
+                    return false;
+                }
+
+                if (!data.password) {
+                    alert('Missing password');
+                    return false;
+                }
+
+                return true;
+            },
             signin: function() {
-                var email = homeModel.email.toLowerCase(),
-                    password = homeModel.password;
+                var model = homeModel,
+                    email = model.email.toLowerCase(),
+                    password = model.password;
+
+                if (!model.validateData(model)) {
+                    return false;
+                }
 
                 provider.Users.login(email, password, successHandler, init);
             }

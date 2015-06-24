@@ -5,6 +5,40 @@
       "type": "view",
       "components": [
         {
+          "type": "form",
+          "components": [
+            {
+              "type": "field",
+              "name": "default",
+              "title": "Default (Let us decide for you!)",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "field",
+              "name": "custom",
+              "title": "Custom (Decide it yourself!)",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "field",
+              "name": "grouptest",
+              "title": "*Layout can be changed in Settings menu later on.",
+              "inputType": "group-separator"
+            }
+          ],
+          "name": "layoutcustomizerModel",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "name": "layoutcustomizer",
+      "title": "Choose your preferred layout",
+      "addToNavigation": false
+    },
+    {
+      "type": "view",
+      "components": [
+        {
           "type": "authentication",
           "name": "homeModel",
           "dataProvider": "testBackend",
@@ -43,7 +77,24 @@
     },
     {
       "type": "view",
-      "components": [],
+      "components": [
+        {
+          "type": "list",
+          "name": "homeViewModel",
+          "dataProvider": "testBackend",
+          "collection": "News",
+          "imageField": "Image",
+          "headerField": "Headline",
+          "subHeaderField": "Time",
+          "group": "Grouping",
+          "masterDetails": true,
+          "detailSubHeaderField": "Headline",
+          "detailDescriptionField": "Time",
+          "detailImageField": "Subimage",
+          "pullToRefresh": true,
+          "endlessScroll": false
+        }
+      ],
       "name": "homeView",
       "title": "Homepage",
       "addToNavigation": true,
@@ -78,26 +129,30 @@
       "type": "view",
       "components": [
         {
-          "type": "about",
-          "name": "aboutViewModel",
-          "appName": "EB I-Banking App",
-          "appVersion": "Version 1.0",
-          "appDescription": "This app was made by group SMUTD using Telerik's App Builder.",
-          "contactButton": true,
-          "contactLabel": "Contact us",
-          "contactMail": "jang93@gmail.com",
-          "facebookButton": true,
-          "facebookLabel": "Like us on Facebook",
-          "facebookLink": "https://www.facebook.com/Hpengfei?fref=ts",
-          "twitterButton": true,
-          "twitterLabel": "Follow us on Instagram",
-          "twitterLink": "https://instagram.com/instahpuff"
+          "type": "form",
+          "components": [
+            {
+              "type": "field",
+              "name": "dropdownlist",
+              "title": "Payee Account No.",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "field",
+              "name": "amount",
+              "title": "Transfer Amount ($)",
+              "inputType": "number"
+            }
+          ],
+          "name": "fundxferModel",
+          "submitButton": "Transfer",
+          "cancelButton": "Cancel"
         }
       ],
-      "name": "aboutView",
-      "title": "About",
+      "name": "fundxfer",
+      "title": "Funds Transfer",
       "addToNavigation": true,
-      "icon": "info"
+      "icon": "contacts"
     },
     {
       "type": "view",
@@ -132,6 +187,39 @@
       "title": "Platform-Switch",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "about",
+          "name": "aboutViewModel",
+          "appName": "EB I-Banking App",
+          "appVersion": "Version 1.0",
+          "appDescription": "This app was made by group SMUTD using Telerik's App Builder.",
+          "contactButton": true,
+          "contactLabel": "Contact us",
+          "contactMail": "jang93@gmail.com",
+          "facebookButton": true,
+          "facebookLabel": "Like us on Facebook",
+          "facebookLink": "https://www.facebook.com/Hpengfei?fref=ts",
+          "twitterButton": true,
+          "twitterLabel": "Follow us on Instagram",
+          "twitterLink": "https://instagram.com/instahpuff"
+        }
+      ],
+      "name": "aboutView",
+      "title": "About",
+      "addToNavigation": true,
+      "icon": "info"
+    },
+    {
+      "type": "view",
+      "components": [],
+      "name": "settings",
+      "title": "Settings",
+      "addToNavigation": true,
+      "icon": "home"
     }
   ],
   "dataProviders": [
@@ -147,6 +235,6 @@
   ],
   "name": "kendoUiMobileApp",
   "navigation": "drawer",
-  "view": "home",
+  "view": "layoutcustomizer",
   "skin": "flat"
 }

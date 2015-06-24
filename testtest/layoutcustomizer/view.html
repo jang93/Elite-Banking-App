@@ -1,0 +1,26 @@
+<div data-role="view" data-title="Choose your preferred layout" data-layout="main-nonav" data-model="app.layoutcustomizer" data-show="app.layoutcustomizer.onShow">
+    <div id="layoutcustomizerModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+                    <label>Default (Let us decide for you!)
+                        <input data-bind="value: layoutcustomizerModel.fields.default" type="checkbox">
+                    </label>
+                </li>
+                <li>
+                    <label>Custom (Decide it yourself!)
+                        <input data-bind="value: layoutcustomizerModel.fields.custom" type="checkbox">
+                    </label>
+                </li>
+                <li class="group-separator">
+                    <h4 class="group-separator-header">*Layout can be changed in Settings menu later on.</h4>
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: layoutcustomizerModel.cancel }">Cancel</a>
+                <a class="km-state-active" data-role="button" data-bind="events: { click: layoutcustomizerModel.submit }">Confirm</a>
+            </div>
+        </form>
+    </div>
+</div>

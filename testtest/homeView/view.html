@@ -1,2 +1,12 @@
 <div data-role="view" data-title="Homepage" data-layout="main" data-model="app.homeView" data-show="app.homeView.onShow">
+
+    <ul data-role="listview" data-style="inset" data-template="homeViewModelTemplate" data-bind="{ source: homeViewModel.dataSource, events: {click: homeViewModel.itemClick}}" data-pull-to-refresh="true" data-endless-scroll="false">
+    </ul>
+    <script type="text/x-kendo-template" id="homeViewModelTemplate">
+        <div class="image-with-text">
+            <img src="#: data['ImageUrl'] #" width="30%" height="30%">
+            <h3>#: data['Headline'] #</h3>
+            <p>#: data['Time'] #</p>
+        </div>
+    </script>
 </div>
