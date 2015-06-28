@@ -1,11 +1,11 @@
 {
-  "ProjectName": "testtest",
+  "ProjectName": "SMUTD Elite Banking App",
   "ProjectGuid": "be8d9e9f-6d5f-4297-8682-c8a2d810cd61",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.testtest",
-  "DisplayName": "testtest",
+  "AppIdentifier": "com.telerik.SMUTDEliteBankinApp",
+  "DisplayName": "SMUTD Elite Banking App",
   "Author": "",
-  "Description": "testtest",
+  "Description": "SMUTD Elite Banking App",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
@@ -35,7 +35,7 @@
   "WP8PublisherID": "{433a9609-d6ad-447b-b7f5-f265846a7e0d}",
   "WP8ProductID": "{348831ba-72eb-4a24-9a0d-9bf0dad43f67}",
   "WPSdk": "8.0",
-  "WP8PackageIdentityName": "1234Telerik.testtest",
+  "WP8PackageIdentityName": "1234Telerik.SMUTDEliteBankingApp",
   "WP8WindowsPublisherName": "CN=Telerik",
   "WP8SupportedResolutions": [
     "ID_RESOLUTION_WVGA",
